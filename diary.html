@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--jquery 문제해결 script-->
+     <script
+     src="https://code.jquery.com/jquery-3.6.0.js"
+     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+     crossorigin="anonymous"></script>
+       <!-- 합쳐지고 최소화된 최신 CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+   
+   <!-- 부가적인 테마 -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+   
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="index.html">자기소개</a></li>
+            <li role="presentation" class="active"><a href="diary.html">일기장</a></li>
+            <li role="presentation"><a href="goal.html">목표</a></li>
+        </ul>
+
+
+    <h2>나의 일기장</h2>
+    <label for="title">제목: </label>
+    <input type="text">
+    <div>
+        <label for="feeling">나의 기분: </label>
+        <select name="feeling" id="feeling">
+            <option value="sunny">해가 쨍쨍한</option>
+            <option value="rainy">비가 오는</option>
+            <option value="cloudy">구름이 낀</option>
+        </select>
+    </div>
+    <div>
+        <textarea cols="60" rows="10"></textarea>
+    </div>
+    <button type="submit">제출</button>
+    <title>Document</title>
+</body>
+</html>

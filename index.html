@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>나를 소개하기</title>
+
+    <!--jquery 문제해결 script-->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="index.html">자기소개</a></li>
+            <li role="presentation" class="active"><a href="diary.html">일기장</a></li>
+            <li role="presentation" class="active"><a href="goal.html">목표</a></li>
+        </ul>
+    <h1>남서하를 소개합니다.</h1>
+    <h2>글로벌융합대학 1학년</h2>
+    <from action="my-app" method="GET">
+        <div class="form-group">
+            <label for="userid">아이디: </label>
+            <input type="text" id="userid" class="form-control" name="id" placeholder="아이디를 입력하세요" value="user">
+        </div>
+        <div class="from-group">
+            <label for="password">비밀번호: </label>
+            <input type="text" class="form-control" id="userpw" name="password" placeholder="비밀번호를 입력하세요" value="">
+        </div>
+    <button type="submit" class="btn btn-primary">제출</button>
+    </from><br>
+    <h2>나를 대표하는 사진</h2>
+    <image src="https://i.pinimg.com/originals/4a/84/24/4a84242b043c49055c80d7288e0ff79a.jpg"
+        height="350px" width="550px"></image><br>
+
+    <h2>내가 제일 좋아하는 노래</h2>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/fBGSJ3sbivI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <h2>나의 일기장</h2>
+    <label for="title">제목: </label>
+    <input type="text">
+    <div>
+        <label for="feeling">나의 기분: </label>
+        <select name="feeling" id="feeling">
+            <option value="sunny">해가 쨍쨍한</option>
+            <option value="rainy">비가 오는</option>
+            <option value="cloudy">구름이 낀</option>
+        </select>
+    </div>
+    <div>
+        <textarea cols="60" rows="10"></textarea>
+    </div>
+    <button type="submit">제출</button><br>
+    <h2>올해 이루고 싶은 것들</h2>
+    <ol start="1">
+        <li>카페 알바 시작하기</li>
+        <li>친구 둘이서 2박 3일 여행가기</li>
+        <li>성적 장학금 받기</li>
+        <li>재미있게 살기!</li>
+    </ol><br>
+    <hr>
+    <a href="https://gist.github.com/nma5h">나의 깃 주소</a><br>
+</body>
+
+</html>
